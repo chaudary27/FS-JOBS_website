@@ -6,26 +6,25 @@ JOBS=[
     'title':'Data Analyst',
     'location':'Lahore, Pakistan',
     'salary':'Rs. 10,00,000'
-  }
+  },
   {
     'id':2, 
     'title':'Software Developer',
     'location':'Lahore, Pakistan',
     'salary':'Rs. 15,00,000'
-  }
+  },
   {
-    'id':1, 
+    'id':3, 
     'title':'Front-end developer',
     'location':'Lahore, Pakistan',
     'salary':'Rs. 13,00,000'
-  }
+  },
   {
-    'id':1, 
+    'id':4, 
     'title':'Back-end developer',
     'location':'Lahore, Pakistan',
     'salary':'Rs. 11,00,000'
   }
-  
 ]
 
 
