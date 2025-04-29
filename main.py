@@ -23,7 +23,6 @@ JOBS=[
     'id':4, 
     'title':'Back-end developer',
     'location':'Lahore, Pakistan',
-    'salary':'Rs. 11,00,000'
   }
 ]
 

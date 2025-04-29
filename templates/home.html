@@ -59,6 +59,12 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
         }
+        h4{
+          font-size: 22px;
+          font-weight: normal;
+          font-family: Roboto;
+          color: #333;
+        }
   </style>
   
 <body>
@@ -74,8 +80,17 @@
       <P>
         {% for job in jobs %}
         <div>
-          {{ job['title'] }}
+          <h4>{{ job['title'] }}</h4>
         </div>
+    
+    <div>
+      <b>  Location:</b> {{ job['location'] }}
+    </div>
+    {% if salary in jobs %}
+    <div>
+    <b>  Salary :</b> {{ job['salary'] }}    </div>
+    {% endif %}
+    
         {% endfor %}
       </P>
       <button> CONTACT US </button>
