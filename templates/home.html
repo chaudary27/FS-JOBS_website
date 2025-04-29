@@ -86,9 +86,14 @@
     <div>
       <b>  Location:</b> {{ job['location'] }}
     </div>
-    {% if salary in jobs %}
+    {% if 'salary' in job %}
     <div>
-    <b>  Salary :</b> {{ job['salary'] }}    </div>
+      <b>Salary:</b> {{ job['salary'] }}
+    </div>
+    {% else %}
+    <div>
+      <b>Salary:</b> Not disclosed
+    </div>
     {% endif %}
     
         {% endfor %}
