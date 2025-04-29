@@ -72,12 +72,11 @@
     
     <h2> Open Positions </h2>
       <P>
-        {% for  job in jobs %}
+        {% for job in jobs %}
         <div>
-          { { job['title']}}
+          {{ job['title'] }}
         </div>
-        
-        {% end for %}
+        {% endfor %}
       </P>
       <button> CONTACT US </button>
     </div>
