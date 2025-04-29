@@ -59,11 +59,43 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
         }
-        h4{
+        h4 {
           font-size: 22px;
           font-weight: normal;
           font-family: Roboto;
           color: #333;
+          margin: 0 0 10px 0;
+        }
+        .job-card {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          border-bottom: 1px solid #ddd;
+          margin-bottom: 15px;
+          transition: all 0.3s ease;
+        }
+        .job-card:hover {
+          background-color: #f8f9fa;
+          transform: translateY(-2px);
+        }
+        .job-info {
+          flex: 1;
+        }
+        .job-info div {
+          margin: 5px 0;
+        }
+        .apply-button {
+          background-color: #28a745;
+          color: white;
+          border: none;
+          padding: 10px 25px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        .apply-button:hover {
+          background-color: #218838;
         }
   </style>
   

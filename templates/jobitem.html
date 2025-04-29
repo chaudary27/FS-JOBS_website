@@ -1,18 +1,21 @@
 
-<div>
-    <h4>{{ job['title'] }}</h4>
+<div class="job-card">
+    <div class="job-info">
+        <h4>{{ job['title'] }}</h4>
+        <div>
+            <b>Location:</b> {{ job['location'] }}
+        </div>
+        {% if 'salary' in job %}
+        <div>
+            <b>Salary:</b> {{ job['salary'] }}
+        </div>
+        {% else %}
+        <div>
+            <b>Salary:</b> Not disclosed
+        </div>
+        {% endif %}
+    </div>
+    <div class="apply-section">
+        <button class="apply-button">Apply</button>
+    </div>
 </div>
-
-<div>
-    <b>Location:</b> {{ job['location'] }}
-</div>
-
-{% if 'salary' in job %}
-<div>
-    <b>Salary:</b> {{ job['salary'] }}
-</div>
-{% else %}
-<div>
-    <b>Salary:</b> Not disclosed
-</div>
-{% endif %}
