@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FS SkillShift</title>
+  <title>{company_name} SkillShift</title>
   
 </head>
   <style>
@@ -71,7 +71,14 @@
     Through cutting-edge technology, personalized recommendations, and an intuitive user experience, SkillShift helps job seekers unlock their true potential while supporting companies in finding the perfect candidates. Whether you’re a fresh graduate looking for your first job, or a professional seeking your next career advancement, SkillShift is here to guide you every step of the way.</p>
     
     <h2> Open Positions </h2>
-      <P>{{jobs}}</P>
+      <P>
+        {% for  job in jobs %}
+        <div>
+          { { job['title']}}
+        </div>
+        
+        {% end for %}
+      </P>
       <button> CONTACT US </button>
     </div>
 
