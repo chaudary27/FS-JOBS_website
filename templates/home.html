@@ -4,10 +4,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>FS SkillShift</title>
+  
 </head>
+  <style>
+    /* body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    } */
+    h1 {
+      font-size=40px;
+      font-weight: normal; 
+      font-family: Roboto;
+      text-align: center;
+      color: #333;
+    }
+    h2 {
+        font-size= 32px;
+        font-weight: normal; 
+        font-family: Roboto;
+      text-align: center;
+      color: rbj(100, 100, 100);
+    }
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+      #banner{
+        height:360px ;
+        width:100%;
+        object-fit: cover;
+      }
+
+        #container{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+        }
+  </style>
+  
 <body>
-<h1> FS SKILLSHIFT</h1>
-<img src=" D:\sss \main_banner.jpg"  >
+  <div id ="container">
+    <h1> FS SKILLSHIFT</h1>
+      <img id ="banner" src="/static/main_banner.jpg" >
+    <h2>About FS SkillShift</h2>
+    <p>At SkillShift, we are passionate about empowering individuals to find the right career opportunities that align with their unique skills, aspirations, and growth potential. Our mission is to simplify the job search process by offering an innovative platform where job seekers can easily match their expertise with the best job opportunities in the market.
+    
+    Through cutting-edge technology, personalized recommendations, and an intuitive user experience, SkillShift helps job seekers unlock their true potential while supporting companies in finding the perfect candidates. Whether you’re a fresh graduate looking for your first job, or a professional seeking your next career advancement, SkillShift is here to guide you every step of the way.</p>
+    
+    <h2> Open Positions </h2>
+      <P>{{jobs}}</P>
+      <button> CONTACT US </button>
+    </div>
+
+  
+
+  
 </body>
 </html>
