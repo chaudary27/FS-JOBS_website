@@ -1,0 +1,16 @@
+<div>
+  <h4>{{ job['title'] }}</h4>
+</div>
+
+<div>
+<b>  Location:</b> {{ job['location'] }}
+</div>
+{% if 'salary' in job %}
+<div>
+<b>Salary:</b> {{ job['salary'] }}
+</div>
+{% else %}
+<div>
+<b>Salary:</b> Not disclosed
+</div>
+{% endif %}
